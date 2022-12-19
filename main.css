@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #E3E3E3;
+  position: relative;
+}
+
+.btn-insert {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  background-color: #414DB4;
+  padding: .5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn-insert i {
+  font-size: 32px;
+  color: #fff;
+}
+
+.btn-insert:hover {
+  cursor: pointer;
+  background-color: #262d69;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+#search-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#search-field input[type=text] {
+  display: inline-block;
+  width: 100%;
+  background-color: #eaeaea;
+  padding: 1rem;
+  font-size: 16px;
+  max-height: 40px;
+  border-radius: .25rem;
+}
+
+#search-field #input-search:focus {
+  border: 1px solid #414DB4;
+  background-color: #e9f1ff;
+}
+
+#search-field .btn-search {
+  background-color: #414DB4;
+  color: #fff;
+  max-height: 40px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: .25rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#search-field .btn-search:hover {
+  background-color: #262d69 !important;
+}
+
+.header {
+  padding: 1rem 0;
+  background-color: #414DB4;
+}
+
+.header-container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header-brand a {
+  text-decoration: none;
+  color: #242635;
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+}
+
+.header-brand a span {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.header .btn-search {
+  padding: 1rem;
+  outline: none;
+  background: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h2 {
+  color: #414DB4;
+  margin-bottom: 1.5rem;
+}
+
+.book .btn-complete {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #D7FFBF;
+  padding: .5rem;
+  border: 2px solid #2DDC34;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.book .btn-complete i {
+  font-size: 16px;
+  color: #2DDC34;
+}
+
+.book .btn-complete:hover {
+  cursor: pointer;
+  background-color: #2ddc34;
+}
+
+.book .btn-complete:hover i {
+  color: #d7ffbf;
+}
+
+.book .btn-remove {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #FDCDCD;
+  padding: .5rem;
+  border: 2px solid #DC2D2D;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.book .btn-remove i {
+  font-size: 16px;
+  color: #DC2D2D;
+}
+
+.book .btn-remove:hover {
+  cursor: pointer;
+  background-color: #DC2D2D;
+}
+
+.book .btn-remove:hover i {
+  color: #FDCDCD;
+}
+
+.book .btn-edit {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #ffe8cd;
+  padding: .5rem;
+  border: 2px solid #e28f13;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.book .btn-edit i {
+  font-size: 16px;
+  color: #e28f13;
+}
+
+.book .btn-edit:hover {
+  cursor: pointer;
+  background-color: #e28f13;
+}
+
+.book .btn-edit:hover i {
+  color: #fff;
+}
+
+.book .btn-undo {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #D9FDFF;
+  padding: .5rem;
+  border: 2px solid #45D4DD;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.book .btn-undo i {
+  font-size: 16px;
+  color: #45D4DD;
+}
+
+.book .btn-undo:hover {
+  cursor: pointer;
+  background-color: #45D4DD;
+}
+
+.book .btn-undo:hover i {
+  color: #D9FDFF;
+}
+
+.book-container {
+  width: 70%;
+  margin: 1.5rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.book-list {
+  padding: 1.5rem;
+  border-radius: .5rem;
+  border: 1px solid #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem !important;
+}
+
+.book-list-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  gap: .5rem;
+}
+
+.book-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.book-author {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .25rem .5rem;
+  background-color: #DBFFDA;
+  color: #5FA31C;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: .25rem;
+  margin-right: .5rem;
+}
+
+.book-author i {
+  margin-right: .5rem;
+}
+
+.book-date {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: .25rem .5rem;
+  background-color: #CCDEFF;
+  color: #1D67EC;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: .25rem;
+  margin-right: .5rem;
+}
+
+.book-date i {
+  margin-right: .5rem;
+}
+
+.footer {
+  background-color: #414DB4;
+  text-align: center;
+  color: #fff;
+  padding: .5rem 0;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.insert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: none;
+}
+
+.insert .btn-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  right: -10px;
+  top: -10px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #DC2D2D;
+  padding: .5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.insert .btn-close i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.insert .btn-close:hover {
+  background-color: #8c1717;
+}
+
+.insert .btn-submit {
+  display: block;
+  background-color: #414DB4;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: .25rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.insert .btn-submit:hover {
+  background-color: #262d69;
+}
+
+.insert-container {
+  position: relative;
+  padding: 2rem;
+  background-color: #fff;
+  width: 40%;
+  margin: auto;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.insert-form-group {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.insert-form label {
+  position: absolute;
+  font-size: 12px;
+  padding: .25rem;
+  background-color: #fff;
+  top: -8px;
+  left: 12px;
+  font-weight: 600;
+}
+
+.insert-form input[type=text] {
+  display: block;
+  border: 1px solid #D9D9D9;
+  width: 100%;
+  padding: 1rem 1rem;
+  padding-top: 1rem;
+  border-radius: .25rem;
+}
+
+.insert-form input[type=text]:focus {
+  border: 1px solid #414DB4;
+}
+
+.insert-form input[type=text]:in-range {
+  background-color: red;
+}
+
+.edit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: none;
+}
+
+.edit .btn-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  right: -10px;
+  top: -10px;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #DC2D2D;
+  padding: .5rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.edit .btn-close i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.edit .btn-close:hover {
+  background-color: #8c1717;
+}
+
+.edit .btn-submit {
+  display: block;
+  background-color: #414DB4;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: .25rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.edit .btn-submit:hover {
+  background-color: #262d69;
+}
+
+.edit-container {
+  position: relative;
+  padding: 2rem;
+  background-color: #fff;
+  width: 40%;
+  margin: auto;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.edit-form-group {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.edit-form label {
+  position: absolute;
+  font-size: 12px;
+  padding: .25rem;
+  background-color: #fff;
+  top: -8px;
+  left: 12px;
+  font-weight: 600;
+}
+
+.edit-form input[type=text] {
+  display: block;
+  border: 1px solid #D9D9D9;
+  width: 100%;
+  padding: 1rem 1rem;
+  padding-top: 1rem;
+  border-radius: .25rem;
+}
+
+.edit-form input[type=text]:focus {
+  border: 1px solid #414DB4;
+}
+
+.edit-form input[type=text]:in-range {
+  background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .book-container {
+    width: 90%;
+  }
+
+  .book-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .book-list-left {
+    margin-right: auto;
+  }
+
+  .book-list-right {
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: unset;
+  }
+
+  .btn-insert {
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .insert-container {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

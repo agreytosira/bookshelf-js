@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps (Fixed Ver) - Agrey Tosira</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/f9d9e76e63.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="btn-insert">
+        <i class="fa-solid fa-plus"></i>
+    </div>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-brand">
+                <a href="/">Bookshelf Apps <span>(for Update Certificate Dicoding)</span></a>
+            </div>
+        </div>
+    </header>
+    <main>>
+        <section class="insert">
+            <div class="insert-container">
+                <div class="btn-close" id="btn-close-insert">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <h2>Tambah Data Buku</h2>
+                <form action="" class="insert-form">
+                    <div class="insert-form-group">
+                        <label for="title">Judul</label>
+                        <input type="text" name="title" id="title" placeholder="Masukkan Judul Buku" autocomplete="off"
+                            required>
+                    </div>
+
+                    <div class="insert-form-group">
+                        <label for="author">Penulis</label>
+                        <input type="text" name="author" id="author" placeholder="Masukkan Nama Penulis"
+                            autocomplete="off" required>
+                    </div>
+
+                    <div class="insert-form-group">
+                        <label for="year">Tahun</label>
+                        <input type="text" name="year" id="year" placeholder="Masukkan Tahun Rilis" autocomplete="off"
+                            required>
+                    </div>
+                    <button type="submit" class="btn-submit">Tambahkan Data</button>
+                </form>
+            </div>
+        </section>
+        <section class="book">
+            <div class="book-container" id="search-field">
+                <input type="text" name="input-search" id="input-search">
+                <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="book-container" id="incomplete-book">
+                <h2>Belum Selesai Dibaca</h2>
+            </div>
+            <div class="book-container" id="complete-book">
+                <h2>Selesai Dibaca</h2>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Designed & Developed by <b>Agrey Tosira</b> for Dicoding Submission</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
